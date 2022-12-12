@@ -9,6 +9,7 @@
   "keywords": [
     "readme"
   ],
+  "type": "module",
   "author": "Daniel Addison",
   "license": "MIT",
   "dependencies": {
