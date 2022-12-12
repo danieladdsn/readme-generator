@@ -10,5 +10,8 @@
     "readme"
   ],
   "author": "Daniel Addison",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^9.1.4"
+  }
 }
