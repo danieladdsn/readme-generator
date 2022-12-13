@@ -114,7 +114,7 @@ const writeFileAsync = promisify(writeToFile);
 async function init() {
   try {
     // Prompt Inquirer questions
-    const userResponses = inquirer.prompt(questions);
+    const userResponses = await inquirer.prompt(questions);
     console.log("Your responses: ", userResponses);
     console.log(
       "Thank you for your responses! Fetching your GitHub data next..."
