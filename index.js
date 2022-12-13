@@ -98,7 +98,7 @@ const questions = [
   },
 ];
 
-function writeToFile(fileName, data) {
+const writeToFile = (fileName, data) => {
   writeFile(fileName, data, (err) => {
     if (err) {
       return console.log(err);
@@ -106,7 +106,7 @@ function writeToFile(fileName, data) {
 
     console.log("Success! Your README.md file has been generated");
   });
-}
+};
 
 const writeFileAsync = promisify(writeToFile);
 
