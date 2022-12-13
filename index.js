@@ -136,4 +136,25 @@ async function init() {
   }
 }
 
+async function getUserInfo(username) {
+  try {
+    // Call the GitHub API to retrieve the user's information
+    const response = await fetch(`https://api.github.com/users/${username}`);
+
+    // If the API call is successful, return the user's information
+    if (response.ok) {
+      return await response.json();
+    }
+
+    // If the API call is not successful, throw an error
+    throw new Error(`Failed to fetch user information for ${username}`);
+  } catch (err) {
+    // Handle the error by logging it to the console
+    console.error(err);
+
+    // Return an empty object to indicate that the user's information could not be retrieved
+    return {};
+  }
+}
+
 init();
