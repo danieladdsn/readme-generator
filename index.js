@@ -4,7 +4,7 @@ import { writeFile } from "fs";
 import { promisify } from "util";
 
 // Internal modules
-import  getUser  from "./utils/api.js";
+import getUser from "./utils/api.js";
 import generateMarkdown from "./utils/generateMarkdown.js";
 
 // Inquirer prompts for userResponses
@@ -117,7 +117,7 @@ async function init() {
     const userResponses = await inquirer.prompt(questions);
     console.log("Your responses: ", userResponses);
     console.log(
-      "Thank you for your responses! Fetching your GitHub data next..."
+      `Thank you for your responses! Fetching your GitHub data next...`
     );
 
     // Call GitHub api for user info
