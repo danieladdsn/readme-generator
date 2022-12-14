@@ -130,7 +130,7 @@ async function init() {
     console.log(markdown);
 
     // Write markdown to file
-    await writeFileAsync("ExampleREADME.md", markdown);
+    await writeFileAsync("README.md", markdown);
   } catch (error) {
     console.log(error);
   }
